@@ -10,7 +10,7 @@
 OS_NAME="ubuntu/focal64"
 
 VAGRANTFILE_API_VERSION = "2"
-NODE_COUNT = 1 
+NODE_COUNT = 2 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "./provisioning/default_setting.sh", args: ""
   config.vm.synced_folder "~/.ssh/", "/tmp/conf.d/"

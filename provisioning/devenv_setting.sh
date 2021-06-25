@@ -9,7 +9,7 @@ tar -C /usr/local/ -xzf /home/vagrant/tmp/go.tar.gz
 
 echo "export PATH=$PATH:/usr/local/go/bin" >> /home/vagrant/.bash_profile
 
-
+source /home/vagrant/.bash_profile
 
 # git
 git config --global user.name "JaehoonKim"
